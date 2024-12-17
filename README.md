@@ -9,10 +9,12 @@ The simulation includes the following built-in strategies:
 
 - **Tit-for-Tat**: Cooperates on the first move, then mimics the opponent's last action.
 - **Random**: Chooses randomly between cooperating and defecting.
-- **Friedman**: Cooperates until the opponent defects, then always defects.
-- **Joss**: Similar to Tit-for-Tat, but occasionally defects (a probabilistic twist).
-- **Harrington**: A nuanced strategy incorporating both retaliation and forgiveness.
-
+- **Friedman/GrimTrigger**: Cooperates until the opponent defects, then always defects.
+- **Joss**: Similar to Tit-for-Tat, but occasionally defects.
+- **Harrington**: Defects after the opponent defects twice in a row, else cooperates.
+- **AlwaysCooperate**: Always cooperates.
+- **AlwaysDefect**: Always defects.
+  
 ### 2. Tournament Framework
 The simulation implements a tournament framework to compare strategies:
 - Tracks cumulative payoffs for each strategy.
