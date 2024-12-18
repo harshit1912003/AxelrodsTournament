@@ -46,7 +46,9 @@ The simulation is implemented in Python and structured to allow maximum flexibil
 Here is how you can define and add your own strategy:
 
 ```python
-class AlwaysCooperate:
+from .base import Strategy, COOPERATE, DEFECT
+
+class AlwaysCooperate(Strategy):
     def move(self, history):
         return COOPERATE
 ```
